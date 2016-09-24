@@ -40,6 +40,7 @@ public class OrcSoldier extends RequestHandler {
       req.markHandled();
     } else {
       super.handleRequest(req);
+      
     }
   }
 
