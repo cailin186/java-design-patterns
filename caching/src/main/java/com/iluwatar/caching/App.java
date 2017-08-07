@@ -78,6 +78,8 @@ public class App {
 
   /**
    * Read-through and write-through
+   * Read-through：如果数据存在于DB中，则从缓存返回数据，并将数据存储在缓存中以供将来使用
+   * write-through:writes data to the cache and DB in a single transaction
    */
   public void useReadAndWriteThroughStrategy() {
     System.out.println("# CachingPolicy.THROUGH");

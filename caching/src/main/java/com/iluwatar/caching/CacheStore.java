@@ -49,6 +49,7 @@ public class CacheStore {
 
   /**
    * Get user account using read-through cache
+   * 如果缓存中存在立刻从缓存返回，否则读取数据库，并存储到缓存中
    */
   public static UserAccount readThrough(String userId) {
     if (cache.contains(userId)) {
